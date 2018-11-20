@@ -1,0 +1,2 @@
+# nuts
+golang rpc server
