@@ -1,0 +1,13 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "0WZ4TXCN1Q7pBlZwStgBRtfcLxs=",
+			"path": "git.apache.org/thrift.git/lib/go/thrift",
+			"revision": "0d8da22dba430c379de04ff48e507e7277f4ea21",
+			"revisionTime": "2018-04-11T17:45:08Z"
+		}
+	],
+	"rootPath": "github.com/junzexu/nuts"
+}

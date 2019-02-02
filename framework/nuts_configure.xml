@@ -1,0 +1,53 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<NutConf>
+    <NutServer>
+        <ServerTransports>
+            <Transport>
+                <Name>TSocket</Name>
+                <Protocal>tcp</Protocal>
+                <Host>0.0.0.0</Host>
+                <Port>80</Port>
+            </Transport>
+            <Transport>
+                <Name>TSocket</Name>
+                <Protocal>udp</Protocal>
+                <Host>0.0.0.0</Host>
+                <Port>80</Port>
+            </Transport>
+        </ServerTransports>
+        <TransportFactorys>
+            <TransportFactory>
+                <Name>TBufferedTransportFactory</Name>
+                <BufferSize>4096</BufferSize>
+            </TransportFactory>
+            <TransportFactory>
+                <Name>NutTransport</Name>
+                <PoolSize>200</PoolSize>
+            </TransportFactory>
+        </TransportFactorys>
+    </NutServer>
+    <Protocols>
+        <Protocol>TBinaryProtocol</Protocol>
+        <Protocol>NutProtocol</Protocol>
+        <Protocol>Protobuf</Protocol>
+    </Protocols>
+    <NutClient>
+        <Transport>
+            <Name>TSocket</Name>
+            <Protocal>udp</Protocal>
+            <Host>0.0.0.0</Host>
+            <Port>80</Port>
+        </Transport>
+        <TransportFactorys>
+            <TransportFactory>
+                <Name>TBufferedTransportFactory</Name>
+                <BufferSize>4096</BufferSize>
+            </TransportFactory>
+            <TransportFactory>
+                <Name>NutTransport</Name>
+                <PoolSize>200</PoolSize>
+            </TransportFactory>
+        </TransportFactorys>
+    </NutClient>
+</NutConf>
